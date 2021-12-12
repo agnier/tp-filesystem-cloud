@@ -1,0 +1,28 @@
+{
+    "name": "agnier/tp-filesystem-cloud",
+    "description": "thinkphp5.* filesystem,include Aliyun and Qiniu and qcloud",
+    "type": "library",
+    "require": {
+        "league/flysystem": "1.*",
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "agnier",
+            "email": "agnier@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "agnier\\filesystem\\": "src/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "agnier\\filesystem\\Service"
+            ]
+        }
+    }
+}
