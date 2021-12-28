@@ -3,7 +3,13 @@
     "description": "thinkphp5.* filesystem,include Aliyun and Qiniu and qcloud",
     "type": "library",
     "require": {
-        "league/flysystem": "1.*"
+        "league/flysystem": "1.*",
+        "psr/simple-cache": "^1.0",
+        "yzh52521/flysystem-oss": "^1.0",
+        "yzh52521/flysystem-obs": "^1.0",
+        "overtrue/flysystem-qiniu": "^1.0",
+        "overtrue/flysystem-cos": "^2.0.0",
+        "league/flysystem-aws-s3-v3":"^1.0"
     },
     "license": "MIT",
     "authors": [
@@ -12,6 +18,7 @@
             "email": "agnier@qq.com"
         }
     ],
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "agnier\\filesystem\\": "src/"
